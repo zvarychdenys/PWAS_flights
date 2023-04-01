@@ -1,0 +1,134 @@
+body {
+  background-image: url("/Learn/assets/img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.logo_text {
+  margin-left: 25%;
+}
+
+.nav {
+  margin-left: 15%;
+}
+.main_title .letters {
+  color: #8e98a8;
+}
+
+.main_title {
+  font-size: 65px;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+.letters {
+  color: #8e98a8;
+}
+
+.main_description {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  color: #826a60;
+  margin-top: 20px;
+}
+
+.select_more_options{
+    padding: 00px 0px 10px 0px;
+}
+
+.language_select {
+  margin-left: 20px;
+}
+
+@media (max-width: 1140px) {
+  .language_select {
+    margin-left: 0px;
+  }
+}
+
+.menu_flights {
+  margin-top: 100px;
+  background-color: aliceblue;
+  opacity: 0.85;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.select_fly_from {
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 6vh;
+}
+
+.select_fly_from button {
+  background-color:#BE7A5D;
+  color:#fff;
+  border: none;
+  padding: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu-dark {
+  --bs-dropdown-bg: #fff;
+}
+
+.dropdown-item,
+.dropdown-item.active {
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-xxl {
+    width: 60%;
+  }
+}
+
+.input-group {
+  margin-bottom: 1.5%;
+}
+
+@media screen and (max-width: 992px) {
+  .logo_text {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .navbar-toggler {
+    padding-top: 2Y0px;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: 10px 50% 10px 50%;
+  }
+  .navbar-collapse {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .select_fly_from button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .select_fly_from{
+    margin-top: 10px;
+  }
+}
