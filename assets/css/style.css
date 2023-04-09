@@ -239,7 +239,7 @@ input[type="date"] {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .input-field{
     margin-top: 10px;
   }
