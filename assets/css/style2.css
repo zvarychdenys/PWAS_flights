@@ -1,0 +1,632 @@
+body {
+  background: url("/PWAS_flights/assets/img/bg.png") center/cover fixed no-repeat;
+}
+
+.logo_text {
+  margin-left: 25%;
+}
+
+.nav {
+  margin-left: 15%;
+}
+.letters {
+  color: #8e98a8;
+}
+
+.main_title {
+  font-size: 65px;
+  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+.main_description {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  color: #826a60;
+  margin-top: 20px;
+}
+
+/* lists of Passangers */
+.select_more_options .dropdown-toggle {
+  background-color: #fff;
+  color: #495057;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 14px;
+}
+
+.select_more_options .dropdown-toggle:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: rgb(233 227 227);
+}
+
+.select_more_options .dropdown-menu {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  font-size: 14px;
+}
+
+.select_more_options .dropdown-item {
+  color: #495057;
+  padding: 0.5rem 1rem;
+}
+
+.select_more_options .dropdown-item.active,
+.select_more_options .dropdown-item:hover {
+  background-color: rgb(250, 180, 150);
+  color: #fff;
+}
+
+.select_more_options .dropdown-item:first-child {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.select_more_options .dropdown-item:last-child {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* Range of Duration HERE */
+
+.language_select {
+  margin-left: 20px;
+}
+
+@media (max-width: 1140px) {
+  .language_select {
+    margin-left: 0px;
+  }
+}
+
+.menu_flights {
+  width: 50%;
+  margin: auto;
+  opacity: 0.87;
+  margin-top: 75px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01),
+    0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09),
+    0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+}
+
+.menu_flights .row > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .menu_flights:hover {
+  transform: scale(1.05);
+  border: 1px solid black;
+} */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.separator {
+  width: calc(100% - 20px);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  color: #8b8e98;
+  margin: 0 10px;
+}
+
+.separator > p {
+  word-break: keep-all;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 11px;
+  margin: auto;
+}
+
+.separator .line {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #e8e8e8;
+  margin: auto;
+}
+
+.credit-card-info--form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.split input {
+  width: 100%;
+}
+
+.input_label {
+  font-size: 10px;
+  color: #8b8e98;
+  font-weight: 600;
+}
+
+.input_field {
+  width: auto;
+  height: 40px;
+  padding: 0 0 0 16px;
+  border-radius: 9px;
+  outline: none;
+  background-color: #f2f2f2;
+  border: 1px solid #e5e5e500;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+
+/* working with date fild  */
+
+input[type="date"] {
+  background-color: rgb(240, 181, 150);
+  padding: 15px;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.search_button {
+  height: 55px;
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: rgb(240, 181, 150);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.search_button:hover {
+  letter-spacing: 3px;
+  background-color: rgb(255, 153, 153);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(250, 180, 150) 0px 7px 29px 0px;
+}
+
+/* Reset input number styles */
+.input_field::-webkit-outer-spin-button,
+.input_field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input_field[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.select_fly_from {
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 6vh;
+}
+
+.select_fly_from button {
+  background-color: #be7a5d;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 17px;
+}
+
+.select_fly_from button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background-color: rgb(128, 95, 247);
+}
+
+.select_fly_from button:active {
+  transform: translateY(0.5em);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu-dark {
+  --bs-dropdown-bg: #fff;
+}
+
+.dropdown-item,
+.dropdown-item.active {
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+/* plane switch icon to switch theme*/
+
+.plane-switch {
+  --dot: #fff;
+  --street: #6b6d76;
+  --street-line: #a8aab4;
+  --street-line-mid: #c0c2c8;
+  --sky-1: #60a7fa;
+  --sky-2: #2f8efc;
+  --light-1: rgba(255, 233, 0, 1);
+  --light-2: rgba(255, 233, 0, 0.3);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.plane-switch input {
+  display: none;
+}
+
+.plane-switch input + div {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 25px;
+  padding: 1px;
+  border-radius: 13px;
+  background: linear-gradient(
+      90deg,
+      var(--street) 0%,
+      var(--street) 25%,
+      var(--sky-1) 75%,
+      var(--sky-2) 100%
+    )
+    left var(--p, 0%) top 0;
+  background-position-x: var(--p, 0%);
+  background-size: 400% auto;
+  transition: background-position 0.6s;
+}
+
+.plane-switch input + div:before,
+.plane-switch input + div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateX(var(--s, 0));
+  transition: transform 0.3s;
+}
+
+.plane-switch input + div:before {
+  width: 42px;
+  right: 2px;
+  top: 4px;
+  height: 1px;
+  background: var(--street-line);
+  box-shadow: 0 16px 0 0 var(--street-line);
+}
+
+.plane-switch input + div:after {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  left: 23px;
+  top: 1px;
+  -webkit-animation: lights2 2s linear infinite;
+  animation: lights2 2s linear infinite;
+  box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1),
+    8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2),
+    16px 21px 0 var(--light-2);
+}
+
+.plane-switch input + div span {
+  display: block;
+  position: absolute;
+}
+
+.plane-switch input + div span.street-middle {
+  top: 12px;
+  left: 21px;
+  width: 3px;
+  height: 1px;
+  transform: translateX(var(--s, 0));
+  background: var(--street-line-mid);
+  box-shadow: 5px 0 0 var(--street-line-mid), 10px 0 0 var(--street-line-mid),
+    15px 0 0 var(--street-line-mid), 20px 0 0 var(--street-line-mid),
+    25px 0 0 var(--street-line-mid);
+  transition: transform 0.3s;
+}
+
+.plane-switch input + div span.cloud {
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background: #fff;
+  position: absolute;
+  top: var(--ct, 8px);
+  left: 100%;
+  opacity: var(--co, 0);
+  transition: opacity 0.3s;
+  -webkit-animation: clouds2 2s linear infinite var(--cd, 0s);
+  animation: clouds2 2s linear infinite var(--cd, 0s);
+}
+
+.plane-switch input + div span.cloud:before,
+.plane-switch input + div span.cloud:after {
+  content: "";
+  position: absolute;
+  transform: translateX(var(--cx, 0));
+  border-radius: 50%;
+  width: var(--cs, 5px);
+  height: var(--cs, 5px);
+  background: #fff;
+  bottom: 1px;
+  left: 1px;
+}
+
+.plane-switch input + div span.cloud:after {
+  --cs: 6px;
+  --cx: 4px;
+}
+
+.plane-switch input + div span.cloud.two {
+  --ct: 20px;
+  --cd: 1s;
+  opacity: var(--co-2, 0);
+}
+
+.plane-switch input + div div {
+  display: table;
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 50%;
+  background: var(--dot);
+  transform: translateX(var(--x, 0));
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.35, 1.2);
+}
+
+.plane-switch input + div div svg {
+  width: 13px;
+  height: 13px;
+  display: block;
+  color: var(--c, var(--street));
+  transition: color 0.6s;
+}
+
+.plane-switch input:checked + div {
+  --p: 100%;
+  --x: 25px;
+  --s: -50px;
+  --c: var(--sky-2);
+  --co: 0.8;
+  --co-2: 0.6;
+}
+
+@keyframes lights2 {
+  20%,
+  30% {
+    box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2),
+      8px 0 0 var(--light-1), 8px 21px 0 var(--light-1), 16px 0 0 var(--light-2),
+      16px 21px 0 var(--light-2);
+  }
+
+  55%,
+  65% {
+    box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2),
+      8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-1),
+      16px 21px 0 var(--light-1);
+  }
+
+  90%,
+  100% {
+    box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1),
+      8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2),
+      16px 21px 0 var(--light-2);
+  }
+}
+
+@keyframes clouds2 {
+  97% {
+    transform: translateX(-72px);
+    visibility: visible;
+  }
+
+  98%,
+  100% {
+    visibility: hidden;
+  }
+
+  99% {
+    transform: translateX(-72px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-xxl {
+    width: 60%;
+  }
+}
+
+.input-group {
+  margin-bottom: 1.5%;
+}
+
+@media screen and (max-width: 992px) {
+  .logo_text {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+  .navbar-toggler {
+    padding-top: 2Y0px;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin: 10px 50% 10px 50%;
+  }
+  .navbar-collapse {
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .select_fly_from button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .select_fly_from {
+    margin-top: 10px;
+  }
+}
+
+.radio-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-inputs > * {
+  margin: 6px;
+}
+
+.radio-input:checked + .radio-tile {
+  border-color: rgb(240, 181, 150);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: rgb(240, 181, 150);
+}
+
+.radio-input:checked + .radio-tile:before {
+  transform: scale(1);
+  opacity: 1;
+  background-color: rgb(240, 181, 150);
+  border-color: rgb(240, 181, 150);
+}
+
+.radio-input:checked + .radio-tile .radio-icon svg {
+  fill: rgb(240, 181, 150);
+}
+
+.radio-input:checked + .radio-tile .radio-label {
+  color: rgb(240, 181, 150);
+}
+
+.radio-input:focus + .radio-tile {
+  border-color: rgb(240, 181, 150);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 4px #f3b37a;
+}
+
+.radio-input:focus + .radio-tile:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* decrease the width */
+  min-height: 20px; /* decrease the minimum height */
+  border-radius: 0.5rem;
+  border: 1px solid #d9ceb5;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* decrease the size of the shadow */
+  transition: 0.15s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-tile:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.25s ease;
+}
+
+.radio-tile:hover {
+  border-color: rgb(240, 181, 150);
+}
+
+.radio-tile:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio-label {
+  color: #707070;
+  transition: 0.375s ease;
+  text-align: center;
+  font-size: 13px;
+}
+
+.radio-input {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

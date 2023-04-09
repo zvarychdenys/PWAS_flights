@@ -1,19 +1,21 @@
+/* Global */
+
 body {
-  background-image: url("/Learn/assets/img/bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: fixed;
+  background: url("/PWAS_flights/assets/img/bg.png") center/cover fixed
+    no-repeat;
+}
+
+/* Header */
+
+.nav {
+  margin-left: 15%;
 }
 
 .logo_text {
   margin-left: 25%;
 }
 
-.nav {
-  margin-left: 15%;
-}
-.main_title .letters {
+.letters {
   color: #8e98a8;
 }
 
@@ -23,112 +25,222 @@ body {
   font-family: "Nunito Sans", sans-serif;
   color: #ffffff;
   margin-top: 100px;
-}
-
-.letters {
-  color: #8e98a8;
+  text-shadow: 1px 2px 4px #000000;
 }
 
 .main_description {
   font-size: 30px;
   font-weight: 400;
   font-family: "Nunito Sans", sans-serif;
-  color: #826a60;
+  color: #554640;
   margin-top: 20px;
 }
 
-.select_more_options{
-    padding: 00px 0px 10px 0px;
-}
-
-.language_select {
-  margin-left: 20px;
-}
-
-@media (max-width: 1140px) {
-  .language_select {
-    margin-left: 0px;
-  }
-}
-
+/* Index flight menu */
 .menu_flights {
-  margin-top: 100px;
-  background-color: aliceblue;
-  opacity: 0.85;
-  border-radius: 15px;
+  background: #fff;
+  opacity: 0.87;
   padding: 20px;
+  margin-top: 15%;
+  border-radius: 25px;
 }
 
-.select_fly_from {
-  margin-top: 20px;
-  border-radius: 10px;
-  height: 6vh;
+.input-field {
+  border-radius: 9px;
+  padding: 0 0 0 16px;
+  height: 40px;
+  outline: none;
+  background-color: #f2f2f2;
+  border: 1px solid #e5e5e500;
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 
-.select_fly_from button {
-  background-color:#BE7A5D;
-  color:#fff;
-  border: none;
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+
+input[type="date"] {
+  background-color: rgb(240, 181, 150);
   padding: 15px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.search_button {
+  height: 55px;
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: rgb(240, 181, 150);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
 }
 
-.dropdown-menu-dark {
-  --bs-dropdown-bg: #fff;
+.search_button:hover{
+  letter-spacing: 3px;
+  background-color: rgb(255, 153, 153);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(250, 180, 150) 0px 7px 29px 0px;
 }
 
-.dropdown-item,
-.dropdown-item.active {
-  color: #000;
-  text-decoration: none;
-}
 
-.dropdown-item:focus,
+/* Passengers */
+.dropdown-item.active,
+.dropdown-item:active,
 .dropdown-item:hover {
-  color: gray;
+  background-color: #fab496;
+  color: #fff;
   text-decoration: none;
 }
 
-@media (min-width: 1200px) {
-  .container-xl,
-  .container-xxl {
-    width: 60%;
-  }
+.dropdown-item:first-child,
+.dropdown-item:last-child {
+  border-radius: 0.5rem;
 }
 
-.input-group {
-  margin-bottom: 1.5%;
+.dropdown-item {
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0.2rem;
 }
 
-@media screen and (max-width: 992px) {
-  .logo_text {
-    margin-left: 50%;
-    margin-right: 50%;
-  }
-  .navbar-toggler {
-    padding-top: 2Y0px;
-    margin-left: 50%;
-    margin-right: 50%;
-    margin: 10px 50% 10px 50%;
-  }
-  .navbar-collapse {
-    margin-left: 50%;
-    margin-right: 50%;
-  }
+.dropdown-toggle {
+  position: relative;
+  display: inline-block;
+  padding-right: 20px;
 }
 
-@media screen and (max-width:768px) {
-  .select_fly_from button {
+.dropdown-toggle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+}
+
+.dropdown-toggle:focus {
+  background-color: #e9e3e3;
+}
+
+/* Sides */
+.way-inputs {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.way-inputs > * {
+  margin: 6px;
+}
+
+.way-input:checked + .way-tile {
+  border-color: rgb(240, 181, 150);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: rgb(240, 181, 150);
+}
+
+.way-input:checked + .way-tile:before {
+  transform: scale(1);
+  opacity: 1;
+  background-color: rgb(240, 181, 150);
+  border-color: rgb(240, 181, 150);
+}
+
+.way-input:checked + .way-tile .way-icon svg {
+  fill: rgb(240, 181, 150);
+}
+
+.way-input:checked + .way-tile .way-label {
+  color: rgb(240, 181, 150);
+}
+
+.way-input:focus + .way-tile {
+  border-color: rgb(240, 181, 150);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 4px #f3b37a;
+}
+
+.way-input:focus + .way-tile:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.way-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px; /* decrease the width */
+  min-height: 20px; /* decrease the minimum height */
+  border-radius: 0.5rem;
+  border: 1px solid #d9ceb5;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* decrease the size of the shadow */
+  transition: 0.15s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.way-tile:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid #b5bfd9;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 0.25rem;
+  left: 0.25rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.25s ease;
+}
+
+.way-tile:hover {
+  border-color: rgb(240, 181, 150);
+}
+
+.way-tile:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.way-label {
+  color: #707070;
+  transition: 0.375s ease;
+  text-align: center;
+  font-size: 15px;
+}
+
+.way-input {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+
+/* Media screen */
+@media screen and (max-width: 1400px) {
+  .search_button{
     margin-top: 10px;
   }
 }
 
-@media screen and (max-width:576px) {
-  .select_fly_from{
+@media screen and (max-width: 992px) {
+  .input-field{
     margin-top: 10px;
   }
 }
