@@ -61,7 +61,7 @@ body {
   background-color: transparent;
 }
 
-input[type="date"] {
+.dates {
   background-color: rgb(240, 181, 150);
   padding: 15px;
 }
@@ -229,6 +229,11 @@ input[type="date"] {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/* DatePicker */
+.litepicker .container__footer{
+  margin: 0 0px;
 }
 
 
