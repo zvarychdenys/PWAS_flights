@@ -23,11 +23,7 @@
 </head>
 
 <body>
-
-  <style>
-
-  </style>
-
+  <!-- Menu -->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
     <div class="container-fluid">
       <a class="navbar-brand logo_text" style="color: white; font-size: 25px;" href="#"><span class="letters"
@@ -55,6 +51,7 @@
 
   <main class="container">
 
+    <!-- Main title -->
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-xl-12">
@@ -87,6 +84,7 @@
           </div>
         </div>
 
+        <!-- Input fields for city and dates -->
         <div class="row align-items-center justify-content-center w-100">
           <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
             <input class="w-100 input-field" type="text" placeholder="Enter your city">
@@ -108,11 +106,12 @@
       </div>
   </main>
 
+  <!-- Cards for flights -->
   <div class="container searched_flights">
     <div class="card text-white">
       <img
         src="https://www.london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz"
-        class="card-img-top max-image-height" alt="...">
+        class="card-img-top max-image-height" alt="city image">
       <div class="card-img-overlay d-flex flex-column justify-content-end">
         <div class="card-text-overlay">
           <div class="row">
@@ -121,7 +120,7 @@
             </div>
             <div class="col">
               <t class="align-middle card-text">1hr 30min</t>
-              <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3222/3222672.png" alt="">
+              <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3222/3222672.png" alt="weather icon">
             </div>
           </div>
           <p class="card-text">Availability: 2 <img class="icon"
@@ -135,13 +134,12 @@
             </div>
           </div>
         </div>
-        <button type="button"
-          class="btn button_go_t_buy rounded-circle position-absolute bottom-0 end-0">-></button>
+        <button type="button" class="btn button_go_to_buy rounded-circle position-absolute bottom-0 end-0">-></button>
       </div>
     </div>
   </div>
 
-
+  <!-- Connect js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
