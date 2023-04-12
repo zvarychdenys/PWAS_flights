@@ -86,43 +86,61 @@
             </ul>
           </div>
         </div>
-        <!-- Duration HERE -->
-        <!-- <div class="col-xxl-3 col-lg-5 col-md-7  way-inputs">
-          <label>
-            <input class="way-input" type="radio" name="engine" />
-            <span class="way-tile">
-              <span class="way-label">One way</span>
-            </span>
-          </label>
-          <label>
-            <input checked="" class="way-input" type="radio" name="engine" />
-            <span class="way-tile">
-              <span class="way-label">Return</span>
-            </span>
-          </label>
-        </div>
-      </div> -->
 
-      <div class="row align-items-center justify-content-center w-100">
-        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
-          <input class="w-100 input-field" type="text" placeholder="Enter your city">
-        </div>
-        <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
-          <input class="w-100 input-field" type="text" placeholder="Enter city to fly">
-        </div>
-        <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
-          <input class="w-100 input-field dates" type="text" placeholder="Select dates" id="start-date">
-        </div>
-        <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
-          <input class="w-100 input-field dates" type="text" placeholder="Select dates" id="end-date">
-        </div>
-        <div class="col-xxl-2 col-md-12 col-sm-12 col-12 align-items-center justify-content-center align-middle d-flex">
-          <button class="search_button">Search</button>
+        <div class="row align-items-center justify-content-center w-100">
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
+            <input class="w-100 input-field" type="text" placeholder="Enter your city">
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
+            <input class="w-100 input-field" type="text" placeholder="Enter city to fly">
+          </div>
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
+            <input class="w-100 input-field dates" type="text" placeholder="Select dates" id="start-date">
+          </div>
+          <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-12">
+            <input class="w-100 input-field dates" type="text" placeholder="Select dates" id="end-date">
+          </div>
+          <div
+            class="col-xxl-2 col-md-12 col-sm-12 col-12 align-items-center justify-content-center align-middle d-flex">
+            <button class="search_button">Search</button>
+          </div>
         </div>
       </div>
-    </div>
-
   </main>
+
+  <div class="container searched_flights">
+    <div class="card text-white">
+      <img
+        src="https://www.london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz"
+        class="card-img-top max-image-height" alt="...">
+      <div class="card-img-overlay d-flex flex-column justify-content-end">
+        <div class="card-text-overlay">
+          <div class="row">
+            <div class="col-xl-3 col-md-4 col-8">
+              <h5 class="card-title">Krakow - Prague (Czechia)</h5>
+            </div>
+            <div class="col">
+              <t class="align-middle card-text">1hr 30min</t>
+              <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3222/3222672.png" alt="">
+            </div>
+          </div>
+          <p class="card-text">Availability: 2 <img class="icon"
+              src="https://cdn-icons-png.flaticon.com/512/694/694642.png" alt="img_persons"></p>
+          <div class="row align-items-end">
+            <div class="col">
+              <p class="card-text">2023-04-26 18:45 min - 2023-04-26 20:15 min</p>
+            </div>
+            <div class="col text-end">
+              <p class="price card-text ">145 zł</p>
+            </div>
+          </div>
+        </div>
+        <button type="button"
+          class="btn button_go_t_buy rounded-circle position-absolute bottom-0 end-0">-></button>
+      </div>
+    </div>
+  </div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">

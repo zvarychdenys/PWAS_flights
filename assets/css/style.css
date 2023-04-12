@@ -79,15 +79,18 @@ body {
   transition: all 0.5s ease;
 }
 
-.search_button:hover{
+.search_button:hover {
   letter-spacing: 3px;
   background-color: rgb(255, 153, 153);
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(250, 180, 150) 0px 7px 29px 0px;
 }
 
-
 /* Passengers */
+.dropdown-menu{
+  z-index: 9999;
+}
+
 .dropdown-item.active,
 .dropdown-item:active,
 .dropdown-item:hover {
@@ -232,20 +235,83 @@ body {
 }
 
 /* DatePicker */
-.litepicker .container__footer{
+.litepicker .container__footer {
   margin: 0 0px;
 }
 
+/* Searched Flights */
+.searched_flights {
+  margin-top: 10%;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.max-image-height {
+  max-height: 400px;
+  border-radius: 10px;
+}
+
+.card{
+  padding: 10px;
+  border: none;
+}
+
+.card-text-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  height: auto;
+}
+
+.card-title , .card-text{
+  margin-left: 10px;
+}
+
+.card-text{
+  color:#9c9a9a;
+  padding: 0 10px 0 0;
+}
+
+.icon{
+  height: 20px;
+  filter: drop-shadow(1px 1px 1px #fff);
+}
+
+.price{
+  color: greenyellow;
+  font-size: 30px;
+  margin: 0 40px 10px 0;
+}
+
+.button_go_to_buy{
+  background-color: #b5bfd9;
+  width: 60px;
+  height: 60px;
+  margin: 10px 0 10px;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button_go_to_buy:hover{
+  background-color: #b5bfd9;
+}
+
+.card-img-overlay:hover .button_go_to_buy {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
 
 /* Media screen */
 @media screen and (max-width: 1400px) {
-  .search_button{
+  .search_button {
     margin-top: 10px;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .input-field{
+  .input-field {
     margin-top: 10px;
   }
 }
